@@ -4,7 +4,7 @@ import React from 'react';
 
 function Square(props) {
     return (
-      <button className="square" onClick={props.onClick}>
+      <button data-testid= "secret-test-id" className="square" onClick={props.onClick}>
         {props.value}
       </button>
     );
@@ -14,7 +14,7 @@ class Board extends React.Component {
 
     Square(props) {
         return (
-          <button className="square" onClick={props.onClick}>
+          <button data-testid= "secret-test-id" className="square" onClick={props.onClick}>
             {props.value}
           </button>
         );
